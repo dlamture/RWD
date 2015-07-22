@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*
+$susy: (
+  	flow: ltr, //[ltr | rtl]，從左到右，rtl則相反
+    container: auto, //可自行設定grid的寬度，例：960px、60em
+    container-position: center, //[left | center | right | <length>]
+    global-box-sizing: content-box, //[content-box | border-box]，若要使用border-box，需載入mixin，@include border-box-sizing;
+    last-flow: to, //[to | from]
+  	math: fluid, //[fluid | static]
+
+  	output: float,
+  	gutter-position: after, //[before | after | split | inside | inside-static]
+  	columns: 4,
+  	gutters: .25,
+  	column-width: false, //固定柵欄的寬度，若指定如60px，可以固定總體寬度
+
+  	debug: (
+  	  	image: show, //開發時使用show可看到柵欄，選項：show、hide、show-columns、show-baseline
+  	  	color: rgba(#66f, .25), //提供是否要變換debug模式的grid背景顏色
+  	  	output: background, //選項：background、overlay
+  	  	toggle: top right, //選項：right left、top bottom
+  	),
+  	use-custom: (
+  	  	background-image: true,
+  	  	background-options: false,
+  	  	box-sizing: true,
+  	  	clearfix: false,
+  	  	rem: true,
+  	)
+);
+*/
+
+/*# sourceMappingURL=susy_global.css.map */

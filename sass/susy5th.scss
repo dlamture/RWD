@@ -1,0 +1,34 @@
+//960Grid 流體版型(Fulid layout)，susy1>susy2轉換
+
+@import "compass/reset";
+@import "compass/css3";
+@import "susy";
+@import "breakpoint";
+$susy: (
+    columns: 12,
+    math: fulid,
+    column-width: 60px,
+    gutter-position: after,
+    gutters: 1/3, // 你要的欄距/欄寬column-width
+    debug: (image: show),
+);
+//@include border-box-sizing;
+
+
+.container{
+    @include container();
+    height: 100px;
+    padding: 0 10px;
+}
+
+.box{
+    @include span(1);
+    height: 100px;
+    background-color: rgba(0,0,0,.3);
+}
+
+.box2{
+    @include span(11 last);
+    height: 100px;
+    background-color: rgba(255,0,0,.3);
+}

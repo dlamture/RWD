@@ -1,0 +1,35 @@
+//960Grid 流體版型(Fulid layout)，susy1>susy2轉換
+
+@import "compass/reset";
+@import "compass/css3";
+@import "susy";
+@import "breakpoint";
+
+$pad: 569px; //預設為min-width
+$pc: 1024px; //預設為min-width
+
+
+.container{
+    width:300px;
+    height:300px;
+    margin: 0 auto;
+    color: #fff;
+    background: orange;
+    @include breakpoint($pad){
+        background: black;
+    }
+    @include breakpoint($pc){
+        background: blue;
+    }
+}
+
+$pad2: max-width 767px; //更改為max-width (desktop first) 由大刻到小
+.content{
+    width:100px;
+    background-color: #fa0;
+
+    @include breakpoint($pad2){
+        width:200px;
+        background-color: #c00;
+    }
+}
