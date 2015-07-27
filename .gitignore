@@ -1,0 +1,6 @@
+.phpintel/
+node_modules/
+.DS_Store
+Thumbs.db
+.sass-cache/
+compass_app_log.txt
